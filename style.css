@@ -1,0 +1,338 @@
+body {
+    font-family: 'Arial', sans-serif; 
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4; /* Светло-серый фон */
+    overflow-x: hidden; 
+}
+.great-vibes-regular {
+    font-family: "Great Vibes", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+header {
+    background-image: linear-gradient(to right, #333, #555); /* Градиентный фон */
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Тень */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.2); /* Прозрачность */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.4); /* Увеличение прозрачности при наведении */
+    transform: scale(1.05);
+}
+
+.hero {
+    background-image: url('Images/cover.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    text-align: center;
+    padding: 100px 0;
+    position: relative; /* Для абсолютного позиционирования элементов */
+    overflow: hidden; /* Скрывает лишнюю часть изображения */
+}
+
+.hero-image {
+    opacity: 0.5;
+  }
+
+.services h2 {
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #848484, #1100ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    z-index: 2; /* Текст над градиентом */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Тень для текста */
+}
+
+.btn {
+    display: inline-block;
+    background-image: linear-gradient(to right, #31455a, #6a849e); /* Градиент */
+    color: #fff;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Тень */
+}
+
+.btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Усиленная тень при наведении */
+}
+
+
+
+.services {
+    padding: 2rem;
+}
+
+.service {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+    text-align: center;
+    border-radius: 10px; /* Скругленные уголки */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень */
+    background-color: rgba(255, 255, 255, 0.8); /* Прозрачность */
+    overflow: hidden; /* Скрываем переполнение изображения */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease; /* Добавлен transition для transform */
+}
+
+.service:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.2)); /* Размытая тень при наведении */
+
+}
+
+
+.service img {
+    width: 200px;
+    height: auto;
+    margin-right: 1rem;
+    border-radius: 10px; /* Скругленные уголки */
+    transition: transform 0.3s ease; /* Анимация поворота */
+}
+
+.service img:hover {
+    transform: rotate(5deg); /* Поворот при наведении */
+}
+
+
+.services h2 {
+    border-radius: 5px;
+    background-image: linear-gradient(to right, #848484, #1100ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="message"],
+  input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  /* Кнопка "Наверх" */
+#toTopButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #838383;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .service {
+        flex-direction: column;
+        align-items: center;
+    }
+    .service img {
+        width: 100%;
+        margin: 1rem 0;
+    }
+}
+
+@media (min-width: 1600px) {
+    .hero {
+        padding: 200px 0;
+    }
+    .hero h2 {
+        font-size: 3rem;
+    }
+    .service {
+        flex-direction: row;
+        margin-bottom: 3rem;
+    }
+    .service img {
+        width: 500px;
+        margin-right: 2rem;
+    }
+}
+
+@media only screen and (max-width: 768px) { /* Максимальная ширина iPhone XR */
+    header {
+        padding: 0.5rem 1rem; /* Уменьшаем padding */
+    }
+
+    header h1 {
+        font-size: 1.5rem; /* Уменьшаем размер шрифта заголовка */
+        margin-bottom: 0.5rem; /* Уменьшаем отступ под заголовком */
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap; /* Разрешаем перенос пунктов меню */
+        justify-content: center; /* Центрируем пункты меню */
+    }
+
+    nav a {
+        margin: 0.5rem; /* Уменьшаем отступы между пунктами меню */
+        font-size: 0.9rem; /* Уменьшаем размер шрифта пунктов меню */
+        display: block; /* Занимаем всю доступную ширину для каждого пункта меню */
+        text-align: center;
+
+    }
+}
+
+.service-section {
+    margin-bottom: 3rem;
+ }
+ 
+ .service-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ }
+ 
+ .service-item {
+    width: 45%;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 1rem;
+ }
+ 
+ 
+ .service-item img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 1rem;
+ }
+ 
+ .project-category {
+    margin-bottom: 2rem;
+ }
+ 
+ .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Адаптивная сетка */
+    grid-gap: 1rem;
+ }
+ 
+ .project {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    text-align: center;
+ }
+ 
+ .project img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+ }
+ .about-section, .mission-section, .experience-section, .team-section {
+    margin-bottom: 3rem;
+ }
+ 
+ .team-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+ }
+ 
+ .team-member {
+    width: 30%;
+    text-align: center;
+    margin-bottom: 1rem;
+ }
+ 
+ .team-member img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 0.5rem;
+ }
+ .contact-info, .contact-form {
+    margin-bottom: 3rem;
+ }
+ 
+ .contact-form form {
+    width: 60vw;
+    max-width: 600px;
+    margin: 0 auto;
+ }
+ 
+ .contact-form label {
+    display: block;
+    margin-bottom: 0.5rem;
+ }
+ 
+ .contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+ }
+ 
+ .contact-form input[type="submit"] {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+ }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Тень */
+}
+main{
+    padding-left: 20px;
+}

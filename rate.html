@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Биржа Услуг</title>
+	<link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+	<header>
+		<h1>Биржа Услуг "Мечта"</h1>
+		<nav>
+			<a href="index.html">Главная</a>
+			<a href="about.html">О нас</a>
+			<a href="services.html">Услуги</a>
+			<a href="portfolio.html">Портфолио</a>
+			<a href="contacts.html">Контакты</a>
+			<a href="rate.html">Оценка услуг</a>
+		</nav>
+	</header>
+	<main>
+		<h2>Наши Исполнители</h2>
+
+		<div class="service-provider-card" data-provider-id="123">
+			<br><img src="Images/vasiliy.jpg" width="148px" alt="Vasiliy" style="margin-left: 26vw;">
+			<h3>Разработчик Василий</h3>
+			<p>Опытный разработчик выполнит следующие работы:</p>
+			<ul>
+				<li>Создание сайтов "под ключ"<br><img src="Images/site.jpg" width="148px" alt="site"></li>
+				<li>Разработка веб-приложений<br><img src="Images/razrabotka.png" width="148px" alt="razrabotka"></li>
+			</ul>
+			<button class="contract-button">Договор</button>
+			<button class="show-rating-panel" data-service="website-dev">Оценить создание сайта</button>
+			<div class="rating-panel" style="display: none;"></div>
+			<button class="show-rating-panel" data-service="web-app-dev">Оценить веб-приложение</button>
+			<div class="rating-panel" style="display: none;"></div>
+		</div>
+
+		<div class="service-provider-card" data-provider-id="456">
+			<br><img src="Images/anna.jpg" width="148px" alt="Anna" style="margin-left: 26vw;">
+			<h3>Маркетолог Анна</h3>
+			<p>Профессиональный маркетолог поможет привлечь клиентов.</p>
+			<ul>
+				<li>SEO оптимизация<br><img src="Images/seo.jpg" width="148px" alt="seo"></li>
+				<li>Контекстная реклама<br><img src="Images/reklama.jpg" width="148px" alt="reklama"></li>
+			</ul>
+			<button class="contract-button">Договор</button>
+			<button class="show-rating-panel" data-service="seo">Оценить SEO</button>
+			<div class="rating-panel" style="display: none;"></div>
+			<button class="show-rating-panel" data-service="context-ads">Оценить контекстную рекламу</button>
+			<div class="rating-panel" style="display: none;"></div>
+		</div>
+
+		<div id="handshake-animation" style="display: none;">
+		</div>
+
+		<div id="satisfaction-chart">
+		</div>
+	</main>
+
+	<footer>
+		<p>&copy; 2025 Биржа Услуг "Мечта"</p>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+	<script src="script.js"></script>
+</body>
+
+</html>

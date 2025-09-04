@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Портфолио - Биржа Услуг</title>
+   <link rel="stylesheet" href="style.css">
+   <meta name="description" content="Портфолио">
+   <link rel="icon" href="Images/favicon_portfolio.ico" type="img/x-icon">
+   <button id="toTopButton" onclick="scrollToTop()">Наверх</button>
+</head>
+<body>
+   <header>
+       <h1>Биржа услуг "Мечта"</h1>
+       <nav>
+        <a href="index.html">Главная</a>
+        <a href="about.html">О нас</a>
+        <a href="services.html">Услуги</a>
+        <a href="portfolio.html">Портфолио</a>
+        <a href="contacts.html">Контакты</a>
+        <a href="rate.html">Оценка услуг</a>
+       </nav>
+   </header>
+
+   <main>
+    <div id="text-about">
+       <h2>Наши проекты</h2>
+       <section class="project-category">
+           <h3>Интернет-магазины</h3>
+           <div class="project-grid">
+               <div class="project">
+                   <img src="Images/techshop.png" alt="Проект TechShop">
+                   <h4>Проект "TechShop"</h4>
+                   <p>Верстка адаптивного интернет-магазина электроники</p>
+               </div>
+               <div class="project">
+                   <img src="Images/coloshop.jpg" alt="Проект ColoShop">
+                   <h4>Проект "ColoShop"</h4>
+                   <p>Верстка интернет-магазина одежды с использованием CSS Grid</p>
+               </div>
+              
+           </div>
+       </section>
+
+       <section class="project-category">
+           <h3>Лендинги</h3>
+           <div class="project-grid">
+               <div class="project">
+                   <img src="Images/netology.png" alt="Проект Нетология">
+                   <h4>Проект "Нетология"</h4>
+                   <p>Разработка лендинга для онлайн-школы</p>
+               </div>
+               <div class="project">
+                   <img src="Images/consulting.png" alt="Проект Консалтинговые услуги">
+                   <h4>Проект "Консалтинговые услуги"</h4>
+                   <p>Верстка лендинга для консалтинговой компании.</p>
+               </div>
+              
+           </div>
+       </section>
+       <section class="project-category">
+        <h3>Корпоративные сайты</h3>
+        <div class="project-grid">
+            <div class="project">
+                <img src="Images/solution.jpg" alt="Проект IT Solutions" >
+                <h4>Проект "IT Solutions"</h4>
+                <p>Многостраничный сайт для IT компании.</p>
+            </div>
+            <div class="project">
+                <img src="Images/products.png" alt="Проект Eco Products">
+                <h4>Проект "Eco Products"</h4>
+                <p>Верстка сайта для компании, занимающейся экологичными продуктами.</p>
+            </div>
+           
+        </div>
+    </section>
+    </div>
+   </main>
+
+   <footer>
+    <p class="great-vibes-regular">&copy; Биржа Услуг "Мечта" 2025 </p>
+   </footer>
+
+   <script>
+    function scrollToTop() {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>

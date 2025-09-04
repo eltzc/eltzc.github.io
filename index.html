@@ -1,40 +1,57 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Биржа Услуг</title>
-  <link rel="stylesheet" href="style.css">
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Биржа услуг - Главная</title>
+   <link rel="stylesheet" href="style.css">
+   <meta name="description" content="Биржа Услуг">
+   <link rel="icon" href="Images/favicon_index.ico" type="img/x-icon"> 
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <style> 
+        body { font-family: sans-serif; margin: 0; } 
+        header { background-color: #333; padding: 1rem; }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>Биржа Услуг "Мечта"</h1>
-  </header>
+   <header>
+       <h1>Биржа услуг "Мечта"</h1>
+       <nav>
+           <a href="index.html">Главная</a>
+           <a href="about.html">О нас</a>
+           <a href="services.html">Услуги</a>
+           <a href="portfolio.html">Портфолио</a>
+           <a href="contacts.html">Контакты</a>
+           <a href="rate.html">Оценка услуг</a>
+       </nav>
+   </header>
 
-  <main>
-    <h2>Наши Исполнители</h2>
+   <section class="hero">
+       <h2>Биржа Фриланс-Услуг: Найдите своего идеального специалиста!</h2>
+       <p>Соединяем заказчиков с проверенными исполнителями для решения любых задач.</p>
+       <a href="services.html" class="btn">Узнать больше</a>
+   </section>
 
-    <div class="service-provider-card" data-provider-id="123">
-      <h3>Исполнитель 1: Электрик Василий</h3>
-      <p>Опытный электрик выполнит любые работы по дому. Быстро, качественно, недорого.</p>
-      <button class="contract-button">Договор</button>
-      <button class="show-rating-panel">Оценить услугу</button>
-      <div class="rating-panel" style="display: none;">
-      </div>
-    </div>
+   <section class="services">
+       <h2>Наши услуги</h2>
+       <div class="service">
+           <h3>Веб-разработка</h3>
+           <img src="Images/web.jpg" alt="Коттедж">
+       </div>
+       <div class="service">
+           <h3>Дизайн</h3>
+           <img src="Images/design.jpg" alt="Таунхаус">
+       </div>
+       <div class="service">
+           <h3>Маркетинг</h3>
+           <img src="Images/marketing.jpg"alt="Многоэтажное здание">
+       </div>
+   </section>
 
-    <div id="handshake-animation" style="display: none;">
-    </div>
-
-    <div id="satisfaction-chart">
-    </div>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Биржа Услуг "Мечта"</p>
-  </footer>
-
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="script.js"></script>
+   <footer class="great-vibes-regular">
+       <p>&copy; Биржа Услуг "Мечта" 2025 </p>
+   </footer>
 </body>
 </html>
