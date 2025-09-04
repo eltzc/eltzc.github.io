@@ -1,0 +1,125 @@
+/* Общие стили */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4; /* Светло-серый фон */
+  color: #333; /* Основной цвет текста */
+  line-height: 1.6;
+}
+
+header, footer {
+  background-color: #333; /* Темно-серый цвет для шапки и подвала */
+  color: #fff; /* Белый текст для шапки и подвала */
+  text-align: center;
+  padding: 1em 0;
+}
+
+main {
+  padding: 20px;
+  max-width: 960px; /* Ограничиваем ширину контента */
+  margin: 0 auto; /* Центрируем контент */
+}
+
+h1 {
+  color: #ffffff; /* Темно-серый цвет для заголовков */
+  text-align: center; /* Центрируем заголовки */
+}
+
+h2, h3 {
+  color: #333; /* Темно-серый цвет для заголовков */
+  text-align: center; /* Центрируем заголовки */
+}
+
+/* Стили для карточек исполнителей */
+.service-provider-card {
+  background-color: #fff; /* Белый фон */
+  border: 1px solid #ddd; /* Светло-серая рамка */
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px; /* Скругленные углы */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+.service-provider-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+/* Стили для кнопок */
+.contract-button, .show-rating-panel, .submit-rating {
+  background-color: #4CAF50; /* Зеленый цвет */
+  color: white; /* Белый текст */
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px; /* Скругленные углы */
+  margin-right: 5px; /* Отступ между кнопками */
+  transition: background-color 0.3s ease; /* Плавный переход цвета */
+}
+
+.contract-button:hover, .show-rating-panel:hover, .submit-rating:hover {
+  background-color: #3e8e41; /* Более темный зеленый при наведении */
+}
+
+.contract-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/* Стили для анимации рукопожатия */
+#handshake-animation {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000; /* Чтобы анимация была поверх всего */
+  color: white;
+  text-align: center;
+}
+
+/* Стили для шкал оценки */
+.rating-panel {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  background-color: #f9f9f9; /* Светло-серый фон */
+}
+
+.rating-panel label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.rating-panel input[type="range"] {
+  width: 100%;
+}
+
+/* Стили для диаграммы удовлетворенности */
+#satisfaction-chart {
+  margin-top: 20px;
+  background-color: #fff; /* Белый фон */
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Тень */
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+  main {
+    padding: 10px;
+  }
+
+  .service-provider-card {
+    padding: 10px;
+  }
+
+  .contract-button, .show-rating-panel, .submit-rating {
+    padding: 6px 10px;
+    font-size: 0.9em;
+  }
+}
